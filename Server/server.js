@@ -23,11 +23,11 @@ app.post("/add", async (req, res) => {
     const data = req.body;
     const newUrl = new URL(data);
     const savedData = await newUrl.save();
-    res.json({ message: "Data Added Successfully" });
+    res.json({ message: "Data Added Successfully", result: true });
     console.log(savedData);
   } catch (err) {
     console.log(err);
-    res.json({ message: "Error Occured" });
+    res.json({ message: "Error Occured", result: err });
   }
 });
 

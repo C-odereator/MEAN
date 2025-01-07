@@ -13,21 +13,22 @@
         <p>Instagram</p>
     </div>
     <div class="right">
-        <div class="contact">
+        <form class="contact" (ngSubmit)="onUserSave()" [formGroup]="userForm">
             <h1>Contact</h1>
             <div class="form">
                 <label for="">First Name</label>
                 <label for="">Last Name</label><br>
-                <input type="text" name="name">
-                <input type="text" name="surname">
+                <input type="text" formControlName="name" name="name" required>
+                <input type="text" formControlName="surname" name="surname">
             </div>
             <label for="">Email</label>
-            <input type="text" name="email">
-            <label for="">Subject</label>
-            <input type="text" name="subject">
+            <input type="text" formControlName="email" name="email">
+            <label for="">Phone</label>
+            <input type="text" formControlName="phone" name="phone">
             <label for="">Leave us a message...</label>
-            <textarea name="" id="" cols="30" rows="6" name="message"></textarea>
+            <textarea name="" id="" cols="30" rows="6" formControlName="message" name="message"></textarea>
+            <button type="submit">Submit</button>
             <br><br><br>
-        </div>
+        </form>
     </div>
 </footer>

@@ -14,7 +14,7 @@ const urlSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
-  subject: {
+  phone: {
     type: String,
     required: true,
   },
@@ -24,7 +24,7 @@ const urlSchema = new mongoose.Schema({
   },
 });
 
-const URL = mongoose.model("url", urlSchema);
+const URL = mongoose.model("student", urlSchema);
 
 module.exports = {
   URL,

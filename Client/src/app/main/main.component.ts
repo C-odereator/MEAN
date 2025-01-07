@@ -2,11 +2,12 @@ import { Component, Input, Output } from '@angular/core';
 import { MainComponentComponent } from '../main-component/main-component.component';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from '../card/card.component';
+import { Card02Component } from '../card-02/card-02.component';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [MainComponentComponent,CommonModule,CardComponent],
+  imports: [MainComponentComponent,CommonModule,CardComponent,Card02Component],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
@@ -62,25 +63,25 @@ export class MainComponent {
 
   card2Data = [
     {
-      svg : "",
+      svg : "assets/images/1.png",
       h1  : "60",
       p : "Years of Excellence",
       bgImage : ""
     },
     {
-      svg : "",
+      svg : "assets/images/2.png",
       h1  : "25",
       p : "High Schools Enroll Our Graduates",
       bgImage : ""
     },
     {
-      svg : "",
+      svg : "assets/images/3.png",
       h1  : "45",
       p : "Certified Teachers",
       bgImage : ""
     },
     {
-      svg : "",
+      svg : "assets/images/4.png",
       h1  : "100",
       p : "Satisfied Parents",
       bgImage : ""
@@ -92,7 +93,7 @@ export class MainComponent {
       bgImage : "https://static.wixstatic.com/media/2feeec_4faa17fa414142a2847de78e84385829~mv2.jpg/v1/fill/w_416,h_477,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2feeec_4faa17fa414142a2847de78e84385829~mv2.jpg"
     },
     {
-      svg : "",
+      svg : "assets/images/5.png",
       h1  : "75",
       p : "Athletic Participation",
       bgImage : ""
